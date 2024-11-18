@@ -1,0 +1,11 @@
+#aboute p {
+  text-align:justify;
+  background-color: #00000099;
+  color: #eee;
+  padding: 4px 8px;
+
+  & > span {
+    font-weight: 600;
+    color: #fff;
+  }
+}

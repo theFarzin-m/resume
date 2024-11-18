@@ -1,0 +1,16 @@
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #ccc;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #00cfcf;
+  border-radius: 5px;
+}
+
+.text-primary {
+  color: var(--text-primary) !important;
+}
+
+.text-secondary {
+  color: var(--text-scondary) !important;
+}
