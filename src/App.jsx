@@ -75,7 +75,7 @@ function App() {
         <div className="custom-full" id="skills">
           <Skills />
         </div>
-        {/* <div className="custom-full" id="project"><Project /></div> */}
+        <div className="custom-full" id="project"><Project /></div>
       </div>
     </ReactLenis>
   );
