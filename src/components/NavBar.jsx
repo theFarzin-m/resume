@@ -61,7 +61,20 @@ export default function NavBar({ changetheme }) {
                 offset={-100}
                 className="btn nav-link"
               >
-                expert in
+                Expert in
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                duration={1000}
+                offset={-100}
+                className="btn nav-link"
+              >
+                Projects
               </Link>
             </li>
           </ul>
