@@ -21,7 +21,7 @@ export default function Project() {
                 <br /> {perview.intro}
               </p>
               {perview.perview && <a href={perview.perview}>Preview</a>}
-              {perview.video && <a href={perview.video}>video</a>}
+              {perview.video && <a target="_blank href={perview.video}>video</a>}
             </div>
           </div>
         ))}
