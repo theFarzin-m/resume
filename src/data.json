@@ -1,7 +1,12 @@
 [
   {
     "title": "farzin store",
-    "intro": "React, styled component, swiper, React Quary, Supabase,...",
+    "intro": "React, vite, swiper, React Quary, Supabase,...",
     "perview": "https://farzin-store.vercel.app/"
+  },
+  {
+    "title": "gamesub",
+    "intro": "React, vite, bootstrap, redux, lenis, aos, react scroll,...",
+    "perview": "https://gamesub.netlify.app/"
   }
 ]
