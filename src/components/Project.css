@@ -4,7 +4,7 @@
   align-items: center;
   margin: 10px;
   box-sizing: border-box;
-  width: 190px;
+  width: 300px;
   height: 254px;
   background: rgba(217, 217, 217, 0.58);
   border: 1px solid white;
@@ -26,7 +26,7 @@
 .project-component .custom-card:active {
   transform: scale(0.95) rotateZ(1.7deg);
 }
-.project-component a {
+.project-component .custom-button {
   background-color: white;
   color: black;
   border-radius: 10em;
@@ -40,13 +40,12 @@
   box-shadow: 0 0 0 0 black;
 }
 
-.project-component a:hover {
+.project-component .custom-button:hover {
   transform: translateY(-4px) translateX(-2px);
   box-shadow: 2px 5px 0 0 black;
 }
 
-.project-component a:active {
+.project-component .custom-button:active {
   transform: translateY(2px) translateX(1px);
   box-shadow: 0 0 0 0 black;
 }
-

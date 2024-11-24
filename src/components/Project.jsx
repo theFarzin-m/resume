@@ -1,10 +1,27 @@
 import React from "react";
+import { Link } from "react-scroll";
+
 import data from "../data.json";
 
 import "./Project.css";
 
 export default function Project() {
-  console.log(data);
+  const showTools = (tools) => {
+    const used = document.querySelectorAll(".used");
+    
+    if (used) {
+      used.forEach(u => {
+        u.classList.remove("used")
+      })
+    }
+
+    tools.map((t) => {
+      const el = document.getElementById(`#${t}`);
+      if (el) {
+        el.classList.add("used");
+      }
+    });
+  };
 
   return (
     <div className="container my-5 project-component" id="projects">
@@ -16,12 +33,34 @@ export default function Project() {
           <div className="col d-flex justify-content-center" key={perview.id}>
             <div className="custom-card p-2">
               <h4> {perview.title}</h4>
-              <p>
-                using:
-                <br /> {perview.intro}
-              </p>
-              {perview.perview && <a href={perview.perview}>Preview</a>}
-              {perview.video && <a target="_blank href={perview.video}>video</a>}
+              <Link
+                to="skills"
+                smooth={true}
+                duration={200}
+                offset={-100}
+                className="custom-button bg-info-subtle border border-info text-secondary"
+                onClick={() => showTools(perview.tools)}
+              >
+                show tools used
+              </Link>
+              {perview.perview && (
+                <a
+                  href={perview.perview}
+                  target="_blank"
+                  className="custom-button"
+                >
+                  Preview
+                </a>
+              )}
+              {perview.video && (
+                <a
+                  target="_blank"
+                  href={perview.video}
+                  className="custom-button"
+                >
+                  video
+                </a>
+              )}
             </div>
           </div>
         ))}

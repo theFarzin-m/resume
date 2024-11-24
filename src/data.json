@@ -1,12 +1,23 @@
 [
   {
+    "id": "1",
     "title": "farzin store",
-    "intro": "React, vite, swiper, React Quary, Supabase,...",
+    "tools": ["react", "vite", "swiper", "react-quary","javascript","css", "react-router", "styled-components"],
     "perview": "https://farzin-store.vercel.app/"
   },
   {
+    "id": "2",
     "title": "gamesub",
-    "intro": "React, vite, bootstrap, redux, lenis, aos, react scroll,...",
+    "tools": [
+      "react",
+      "vite",
+      "bootstrap",
+      "redux",
+      "javascript",
+      "react-router",
+      "react-hook-form",
+      "css"
+    ],
     "perview": "https://gamesub.netlify.app/"
   }
 ]
