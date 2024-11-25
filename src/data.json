@@ -1,13 +1,13 @@
 [
   {
     "id": "1",
-    "title": "farzin store",
-    "tools": ["react", "vite", "swiper", "react-quary","javascript","css", "react-router", "styled-components"],
+    "title": "Farzin store",
+    "tools": ["react", "vite", "swiper", "react-quary","javascript","css", "react-router", "styled-components", "api"],
     "perview": "https://farzin-store.vercel.app/"
   },
   {
     "id": "2",
-    "title": "gamesub",
+    "title": "Gamesub",
     "tools": [
       "react",
       "vite",
@@ -19,5 +19,17 @@
       "css"
     ],
     "perview": "https://gamesub.netlify.app/"
+  },
+    {
+    "id": "3",
+    "title": "Movies",
+    "tools": [
+      "react",
+      "bootstrap",
+      "javascript",
+      "css",
+      "api
+    ],
+    "perview": "https://thefarzin-m.github.io/movie/"
   }
 ]
