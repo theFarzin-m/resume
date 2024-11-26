@@ -16,7 +16,7 @@ export default function Project() {
     }
 
     tools.map((t) => {
-      const el = document.getElementById(`#${t}`);
+      const el = document.getElementById(`${t}`);
       if (el) {
         el.classList.add("used");
       }

@@ -11,7 +11,7 @@
       "css",
       "react-router",
       "styled-components",
-      "rest api"
+      "rest-api"
     ],
     "perview": "https://farzin-store.vercel.app/"
   },
@@ -33,7 +33,7 @@
   {
     "id": 3,
     "title": "Movies",
-    "tools": ["react", "bootstrap", "javascript", "css", "rest api"],
+    "tools": ["react", "bootstrap", "javascript", "css", "rest-api"],
     "perview": "https://thefarzin-m.github.io/movie/"
   }
 ]

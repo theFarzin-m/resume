@@ -8,7 +8,7 @@ export default function Card({ title, icon, level }) {
   const cssID = title.toLowerCase().replaceAll(" ", "-");
 
   return (
-    <div className="col d-flex justify-content-center" data-aos="fade-up"  id={`#${cssID}`}>
+    <div className="col d-flex justify-content-center" data-aos="fade-up"  id={cssID}>
       <div className="custom-card p-2">
         <div className="image-wrapper text-center">{icon}</div>
         <div className="skill-title-wrapper">
