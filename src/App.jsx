@@ -1,14 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { lazy, useEffect, useState } from "react";
 import Snowfall from "react-snowfall";
 import AOS from "aos";
-import { ReactLenis } from "lenis/react";
 
-import Title from "./components/Title";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Project from "./components/Project";
-import Seo from "./components/Seo";
-import NavBar from "./components/NavBar";
+
+const Title = lazy(() => import("./components/Title"));
+const Skills = lazy(() => import("./components/Skills"));
+const Project = lazy(() => import("./components/Project"));
+const Seo = lazy(() => import("./components/Seo"));
+const NavBar = lazy(() => import("./components/NavBar"));
+const About = lazy(() => import("./components/About"));
+
+
+// import Title from "./components/Title";
+// import About from "./components/About";
+// import Skills from "./components/Skills";
+// import Project from "./components/Project";
+// import Seo from "./components/Seo";
+// import NavBar from "./components/NavBar";
 import "./App.css";
 
 function App() {
@@ -49,7 +57,6 @@ function App() {
   document.body.style.color = color;
 
   return (
-    <ReactLenis root>
       <div>
         <Snowfall
           color={color}
@@ -75,9 +82,10 @@ function App() {
         <div className="custom-full" id="skills">
           <Skills />
         </div>
-        <div className="custom-full" id="project"><Project /></div>
+        <div className="custom-full" id="project">
+          <Project />
+        </div>
       </div>
-    </ReactLenis>
   );
 }
 
