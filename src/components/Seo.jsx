@@ -1,20 +1,21 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const ComponentWithSchema = () => (
-  <Helmet>
-    <meta
-      name="description"
-      content="farzin (farzin'm) abbasi front-end/react developer. فرزین عباسی برنامه نویس ری اکت"
-    />
-    <meta
-      name="keywords"
-      content="Farzin Abbasi, توسعه دهنده وب, Front-End, React, فرزین عباسی, web developer, Javascript,farzin'm, thefarzin-m, farzinabbasi, farzin abbasi"
-    />
+  <HelmetProvider>
+    <Helmet>
+      <meta
+        name="description"
+        content="farzin (farzin'm) abbasi front-end/react developer. فرزین عباسی برنامه نویس ری اکت"
+      />
+      <meta
+        name="keywords"
+        content="Farzin Abbasi, توسعه دهنده وب, Front-End, React, فرزین عباسی, web developer, Javascript,farzin'm, thefarzin-m, farzinabbasi, farzin abbasi"
+      />
 
-    <link rel="canonical" href="https://farzinabbasi.ir" />
-    <script type="application/ld+json">
-      {`
+      <link rel="canonical" href="https://farzinabbasi.ir" />
+      <script type="application/ld+json">
+        {`
           {
             "@context": "https://schema.org",
             "@type": "Person",
@@ -29,11 +30,12 @@ const ComponentWithSchema = () => (
               "@type": "Organization",
               "name": "Self-Employed"
             },
-            "knowsAbout": ["Front-End Development", "React"]
+            "knowsAbout": ["Front-End Development", "React", "web developer"]
           }
         `}
-    </script>
-  </Helmet>
+      </script>
+    </Helmet>
+  </HelmetProvider>
 );
 
 export default ComponentWithSchema;
