@@ -1,19 +1,21 @@
 [
   {
     "id": 1,
-    "title": "Farzin store",
+    "title": "Favorite list",
     "tools": [
       "react",
       "vite",
-      "swiper",
       "react-quary",
       "javascript",
       "css",
       "react-router",
       "styled-components",
-      "rest-api"
+      "rest-api",
+      "redux",
+      "bootstrap",
+      "react-hook-form"
     ],
-    "perview": "https://farzin-store.vercel.app/"
+    "perview": "https://favorite-lists.vercel.app/"
   },
   {
     "id": 2,
