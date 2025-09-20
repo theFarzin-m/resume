@@ -18,6 +18,7 @@ import {
   TbBrandNodejs,
   TbBrandNextjs,
   TbApi,
+  TbBrandTypescript,
 } from "react-icons/tb";
 import { IoGitBranchOutline } from "react-icons/io5";
 import { BiLogoRedux, BiLogoMongodb } from "react-icons/bi";
@@ -126,6 +127,11 @@ export default function Skills() {
         <Card
           title="Python"
           icon={<TbBrandPython fontSize="60px" />}
+          level={2}
+        />
+        <Card
+          title="Typescript"
+          icon={<TbBrandTypescript fontSize="60px" />}
           level={2}
         />
       </div>

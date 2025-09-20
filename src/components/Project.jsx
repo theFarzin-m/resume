@@ -8,11 +8,11 @@ import "./Project.css";
 export default function Project() {
   const showTools = (tools) => {
     const used = document.querySelectorAll(".used");
-    
+
     if (used) {
-      used.forEach(u => {
-        u.classList.remove("used")
-      })
+      used.forEach((u) => {
+        u.classList.remove("used");
+      });
     }
 
     tools.map((t) => {
@@ -32,6 +32,7 @@ export default function Project() {
         {data.map((perview) => (
           <div className="col d-flex justify-content-center" key={perview.id}>
             <div className="custom-card p-2">
+              <div className="overlay"></div>
               <h4> {perview.title}</h4>
               <Link
                 to="skills"

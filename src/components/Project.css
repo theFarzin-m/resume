@@ -4,7 +4,7 @@
   align-items: center;
   margin: 10px;
   box-sizing: border-box;
-  width: 300px;
+  width: 200px;
   height: 254px;
   background: rgba(217, 217, 217, 0.58);
   border: 1px solid white;
@@ -16,11 +16,34 @@
   user-select: none;
   font-weight: bolder;
   color: black;
+  overflow: hidden;
+
+  & h4 {
+    transition: all 1s;
+  }
+}
+
+.project-component .custom-card .overlay {
+  transition: all 1s;
+  background-color: rgba(0, 49, 217, 0.58);
+  color: white;
+  padding: 12px;
+  border-radius: 24px;
+  position: relative;
+  z-index: -1;
+  top: 80px;
 }
 
 .project-component .custom-card:hover {
   border: 1px solid black;
   transform: scale(1.05);
+  & h4 {
+    color: #eeeeee;
+  }
+
+  & .overlay {
+    transform: scale(25);
+  }
 }
 
 .project-component .custom-card:active {
@@ -38,6 +61,7 @@
   transition: all 0.3s ease-in-out;
   border: 1px solid black;
   box-shadow: 0 0 0 0 black;
+  width: 100%;
 }
 
 .project-component .custom-button:hover {

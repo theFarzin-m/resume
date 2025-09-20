@@ -37,5 +37,20 @@
     "title": "Movies",
     "tools": ["react", "bootstrap", "javascript", "css", "rest-api"],
     "perview": "https://thefarzin-m.github.io/movie/"
+  },
+  {
+    "id": 4,
+    "title": "Accountant",
+    "tools": [
+      "react",
+      "bootstrap",
+      "typescript",
+      "css",
+      "redux",
+      "react-hook-form",
+      "styled-components",
+      "vite"
+    ],
+    "perview": "https://accountant-zeta.vercel.app/"
   }
 ]
