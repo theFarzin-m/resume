@@ -1,56 +1,175 @@
-[
-  {
-    "id": 1,
-    "title": "Favorite list",
-    "tools": [
-      "react",
-      "vite",
-      "react-quary",
-      "javascript",
-      "css",
-      "react-router",
-      "styled-components",
-      "rest-api",
-      "redux",
-      "bootstrap",
-      "react-hook-form"
-    ],
-    "perview": "https://favorite-lists.vercel.app/"
+{
+  "about": {
+    "fa": {
+      "title": "درباره من",
+      "content": [
+        "سلام! من فرزین هستم – یک Front-End Developer که عاشق طراحی تجربه‌های وب جذاب و کاربردی است. مسیر برنامه‌نویسی را از علاقه شخصی شروع کردم و با تمرین، پروژه‌های واقعی و یادگیری مداوم توانستم مهارت‌های عملی خود را به سطح حرفه‌ای برسانم.",
+        "از تبدیل ایده‌های ساده به وب‌سایت‌های تعاملی و کاربردی لذت می‌برم. کار با React، طراحی رابط کاربری، ارتباط با API‌ها و حل چالش‌های فنی بخش‌های مورد علاقه من هستند.",
+        "در کنار برنامه‌نویسی، مدیریت فروشگاه شخصی خودم را نیز بر عهده دارم که باعث شده مهارت‌هایی مثل مسئولیت‌پذیری، حل مسئله، صبر و ارتباط مؤثر با مشتریان را تقویت کنم.",
+        "من معتقدم یادگیری هیچ‌وقت تمام نمی‌شود و همیشه در حال یادگیری تکنولوژی‌ها و ابزارهای جدید هستم تا پروژه‌های بهتر و کاربردی‌تر بسازم. اگر پروژه‌ای داری یا دوست داری همکاری کنیم، خوشحال می‌شوم با من در ارتباط باشی."
+      ]
+    },
+    "en": {
+      "title": "About Me",
+      "content": [
+        "Hi! I'm Farzin – a Front-End Developer who loves building engaging and user-friendly web experiences. I started programming out of personal passion and, through practice, real projects, and continuous learning, I’ve developed my practical skills to a professional level.",
+        "I truly enjoy transforming simple ideas into interactive and functional websites. Working with React, designing user interfaces, connecting to APIs, and solving technical challenges are the parts of development that excite me the most.",
+        "Besides programming, I also manage my own local business, which has helped me develop strong problem-solving abilities, patience, responsibility, and effective communication skills.",
+        "I believe that learning never stops and I’m always exploring new technologies and tools to build better and more practical projects. If you have a project in mind or want to collaborate, I’d be happy to hear from you."
+      ]
+    }
   },
-  {
-    "id": 2,
-    "title": "Gamesub",
-    "tools": [
-      "react",
-      "vite",
-      "bootstrap",
-      "redux",
-      "javascript",
-      "react-router",
-      "react-hook-form",
-      "css"
-    ],
-    "perview": "https://gamesub.netlify.app/"
-  },
-  {
-    "id": 3,
-    "title": "Movies",
-    "tools": ["react", "bootstrap", "javascript", "css", "rest-api"],
-    "perview": "https://thefarzin-m.github.io/movie/"
-  },
-  {
-    "id": 4,
-    "title": "Accountant",
-    "tools": [
-      "react",
-      "bootstrap",
-      "typescript",
-      "css",
-      "redux",
-      "react-hook-form",
-      "styled-components",
-      "vite"
-    ],
-    "perview": "https://accountant-zeta.vercel.app/"
-  }
-]
+  "skills": [
+    {
+      "title": "JavaScript",
+      "level": 5
+    },
+    {
+      "title": "React",
+      "level": 5
+    },
+    {
+      "title": "HTML",
+      "level": 5
+    },
+    {
+      "title": "Git",
+      "level": 5
+    },
+    {
+      "title": "Css",
+      "level": 5
+    },
+    {
+      "title": "React Router",
+      "level": 5
+    },
+    {
+      "title": "Redux",
+      "level": 5
+    },
+    {
+      "title": "Rest API",
+      "level": 5
+    },
+    {
+      "title": "React Query",
+      "level": 5
+    },
+    {
+      "title": "Bootstrap",
+      "level": 5
+    },
+    {
+      "title": "Styled Components",
+      "level": 5
+    },
+    {
+      "title": "Swiper",
+      "level": 5
+    },
+    {
+      "title": "PostgreSQL",
+      "level": 5
+    },
+    {
+      "title": "MySQL",
+      "level": 5
+    },
+    {
+      "title": "MongoDB",
+      "level": 5
+    },
+    {
+      "title": "Node.js",
+      "level": 4
+    },
+    {
+      "title": "React Hook Form",
+      "level": 4
+    },
+    {
+      "title": "Django",
+      "level": 4
+    },
+    {
+      "title": "Tailwind",
+      "level": 3
+    },
+    {
+      "title": "Next.js",
+      "level": 3
+    },
+    {
+      "title": "Express.js",
+
+      "level": 2
+    },
+    {
+      "title": "Python",
+
+      "level": 2
+    },
+    {
+      "title": "TypeScript",
+      "level": 2
+    }
+  ],
+
+  "projects": [
+    {
+      "id": 1,
+      "title": "Favorite list",
+      "tools": [
+        "react",
+        "vite",
+        "react-quary",
+        "javascript",
+        "css",
+        "react-router",
+        "styled-components",
+        "rest-api",
+        "redux",
+        "bootstrap",
+        "react-hook-form"
+      ],
+      "perview": "https://favorite-lists.vercel.app/"
+    },
+    {
+      "id": 2,
+      "title": "Gamesub",
+      "tools": [
+        "react",
+        "vite",
+        "bootstrap",
+        "redux",
+        "javascript",
+        "react-router",
+        "react-hook-form",
+        "css"
+      ],
+      "perview": "https://gamesub.netlify.app/"
+    },
+    {
+      "id": 3,
+      "title": "Movies",
+      "tools": ["react", "bootstrap", "javascript", "css", "rest-api"],
+      "perview": "https://thefarzin-m.github.io/movie/"
+    },
+    {
+      "id": 4,
+      "title": "Accountant",
+      "tools": [
+        "react",
+        "bootstrap",
+        "typescript",
+        "css",
+        "redux",
+        "react-hook-form",
+        "styled-components",
+        "vite"
+      ],
+      "perview": "https://accountant-zeta.vercel.app/"
+    }
+  ]
+}

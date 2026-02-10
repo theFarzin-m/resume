@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-scroll";
 
 import data from "../data.json";
@@ -29,7 +28,7 @@ export default function Project() {
         <div className="col-12">
           <div className="fw-bold fs-4 text-center mb-3">Projects :</div>
         </div>
-        {data.map((perview) => (
+        {data.projects.map((perview) => (
           <div className="col d-flex justify-content-center" key={perview.id}>
             <div className="custom-card p-2">
               <div className="overlay"></div>
