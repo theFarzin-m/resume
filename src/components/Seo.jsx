@@ -23,7 +23,7 @@ const ComponentWithSchema = () => (
             "url": "https://farzinabbasi.ir/",
             "sameAs": [
               "https://www.linkedin.com/in/farzinabbasi/",
-              "https://github.com/Farzin2079"
+              "https://github.com/theFarzin-m"
             ],
             "jobTitle": "Front-End Web Developer",
             "worksFor": {

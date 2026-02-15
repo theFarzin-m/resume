@@ -1,20 +1,46 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { GlassCard } from "@developer-hub/liquid-glass";
 
 import data from "../data.json";
 
 import "./About.css";
 
+
+import { LiquidGlass } from '@liquidglass/react';
+
+    
+
 export default function About() {
   const [lang, setLang] = useState("en");
   return (
-    <div className="container" data-aos="zoom-out">
-      <div className={`fs-3 fw-bold mb-3 ${lang} `}>
-        {data.about[lang].title}
-      </div>
+    <div className="container" data-aos="zoom-out" id="about">
+      <LiquidGlass
+        borderRadius={20}
+        blur={2}
+        contrast={0.99}
+        brightness={0.9}
+        saturation={1}
+        Elasticity={0.5}
+        className={`about-card ${lang}`}
+      >
+        
+        <div className="about-inner">
+          <div className="en-content">
+            <div className="fs-3 fw-bold mb-3">{data.about.en.title}</div>
+            <div className="mx-5 lh-lg fs-5">
+              <p>{data.about.en.content}</p>
+            </div>
+          </div>
 
-      <div className={`mx-5 lh-lg fs-5 ${lang}`}>
-        <p>{data.about[lang].content}</p>
-      </div>
+          <div className="fa-content">
+            <div className="fs-3 fw-bold mb-3">{data.about.fa.title}</div>
+            <div className="mx-5 lh-lg fs-5">
+              <p>{data.about.fa.content}</p>
+            </div>
+          </div>
+        </div>
+      </LiquidGlass>
+     
 
       <div className="d-flex justify-content-center mt-4">
         <button

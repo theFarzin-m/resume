@@ -1,8 +1,7 @@
-import React from "react";
 import { IoIosStar, IoIosStarOutline } from "react-icons/io";
 
 import "./Card.css";
-import { iconMap } from "./Iconmap";
+import { iconMap } from "./iconmap";
 import { PiEmptyBold } from "react-icons/pi";
 
 export default function Card({ title, level }) {

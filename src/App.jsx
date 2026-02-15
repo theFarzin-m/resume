@@ -10,13 +10,6 @@ const Seo = lazy(() => import("./components/Seo"));
 const NavBar = lazy(() => import("./components/NavBar"));
 const About = lazy(() => import("./components/About"));
 
-
-// import Title from "./components/Title";
-// import About from "./components/About";
-// import Skills from "./components/Skills";
-// import Project from "./components/Project";
-// import Seo from "./components/Seo";
-// import NavBar from "./components/NavBar";
 import "./App.css";
 
 function App() {

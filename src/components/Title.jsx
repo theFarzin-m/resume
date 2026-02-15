@@ -11,8 +11,14 @@ export default function Title() {
   return (
     <div className="conatiner px-2">
       <h1 className="title" data-aos="zoom-in">
-    <ReactTyped strings={["Hello", "I'm Farzin Abbasi", "Farzin'm"]} typeSpeed={50} backSpeed={30} backDelay={1200} startDelay={500} />
-        
+        <ReactTyped
+          strings={["Hello", "I'm Farzin Abbasi", "Farzin'm"]}
+          typeSpeed={50}
+          backSpeed={30}
+          backDelay={1200}
+          startDelay={500}
+          loop={true}
+        />
       </h1>
       <h2
         className="fs-5 mt-4 mb-3 text-secondary text-center text-sm-end"
