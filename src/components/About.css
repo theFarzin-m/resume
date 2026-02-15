@@ -6,13 +6,13 @@
 
 @media (max-width: 768px) {
   .about-card {
-    height: 1500px;
+    height: 1500px !important;
   }
 }
 
 @media (max-width: 992px) {
   .about-card {
-    height: 800px;
+    height: 800px !important;
   }
 }
 

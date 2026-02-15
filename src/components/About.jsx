@@ -1,12 +1,11 @@
 import { useState } from "react";
-import { GlassCard } from "@developer-hub/liquid-glass";
+import { LiquidGlass } from '@liquidglass/react';
 
 import data from "../data.json";
 
 import "./About.css";
 
 
-import { LiquidGlass } from '@liquidglass/react';
 
     
 
