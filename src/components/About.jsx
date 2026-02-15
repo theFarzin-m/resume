@@ -18,7 +18,7 @@ export default function About() {
         borderRadius={20}
         blur={2}
         contrast={0.99}
-        brightness={0.9}
+        brightness={1}
         saturation={1}
         Elasticity={0.5}
         className={`about-card ${lang}`}
