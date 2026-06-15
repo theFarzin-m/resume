@@ -5,10 +5,6 @@ import data from "../data.json";
 
 import "./About.css";
 
-
-
-    
-
 export default function About() {
   const [lang, setLang] = useState("en");
   return (

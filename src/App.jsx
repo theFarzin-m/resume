@@ -2,7 +2,6 @@ import React, { lazy, useEffect, useState } from "react";
 import Snowfall from "react-snowfall";
 import AOS from "aos";
 
-
 const Title = lazy(() => import("./components/Title"));
 const Skills = lazy(() => import("./components/Skills"));
 const Project = lazy(() => import("./components/Project"));
@@ -11,6 +10,8 @@ const NavBar = lazy(() => import("./components/NavBar"));
 const About = lazy(() => import("./components/About"));
 
 import "./App.css";
+import Taps from "./components/Taps";
+import { FaArrowsSpin } from "react-icons/fa6";
 
 function App() {
   const [color, setColor] = useState("#black");
@@ -50,35 +51,81 @@ function App() {
   document.body.style.color = color;
 
   return (
-      <div>
-        <Snowfall
-          color={color}
-          style={{
-            position: "fixed",
-            width: "100vw",
-            height: "100vh",
-            zIndex: "-1",
-          }}
-        />
+    <div>
+      <Snowfall
+        color={color}
+        style={{
+          position: "fixed",
+          width: "100vw",
+          height: "100vh",
+          zIndex: "-1",
+        }}
+      />
 
-        <Seo />
-        <NavBar changetheme={changetheme} />
+      <Seo />
+      <Taps>
+        <Taps.Item className="bg-sky-300 hover:bg-sky-300" to="#" onClick={changetheme}>
+          <FaArrowsSpin className="md:text-3xl text-lg"  />
+        </Taps.Item>
 
-        <div className="custom-full" id="title">
-          <Title />
-        </div>
+        <Taps.Item
+          activeClass="text-blue-500 bg-blue-200"
+          to="title"
+          spy={true}
+          smooth={true}
+          duration={1000}
+          offset={-100}
+        >
+          Title
+        </Taps.Item>
+        <Taps.Item
+          activeClass="text-blue-500 bg-blue-200"
+          to="aboute"
+          spy={true}
+          smooth={true}
+          duration={1000}
+          offset={-100}
+        >
+          Aboute me
+        </Taps.Item>
+        <Taps.Item
+          activeClass="text-blue-500 bg-blue-200"
+          to="skills"
+          spy={true}
+          smooth={true}
+          duration={1000}
+          offset={-100}
+        >
+          Expert in
+        </Taps.Item>
 
-        <div className="custom-full" id="aboute">
-          <About />
-        </div>
+        <Taps.Item
+          activeClass="text-blue-500 bg-blue-200"
+          to="project"
+          spy={true}
+          smooth={true}
+          duration={1000}
+          offset={-100}
+        >
+          Projects
+        </Taps.Item>
+      </Taps>
 
-        <div className="custom-full" id="skills">
-          <Skills />
-        </div>
-        <div className="custom-full" id="project">
-          <Project />
-        </div>
+      <div className="custom-full" id="title">
+        <Title />
       </div>
+
+      <div className="custom-full" id="aboute">
+        <About />
+      </div>
+
+      <div className="custom-full" id="skills">
+        <Skills />
+      </div>
+      <div className="custom-full" id="project">
+        <Project />
+      </div>
+    </div>
   );
 }
 

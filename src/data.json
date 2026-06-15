@@ -57,6 +57,10 @@
       "level": 5
     },
     {
+      "title": "Tailwind",
+      "level": 5
+    },
+    {
       "title": "Bootstrap",
       "level": 5
     },
@@ -81,6 +85,10 @@
       "level": 5
     },
     {
+      "title": "TypeScript",
+      "level": 4
+    },
+    {
       "title": "Node.js",
       "level": 4
     },
@@ -91,10 +99,6 @@
     {
       "title": "Django",
       "level": 4
-    },
-    {
-      "title": "Tailwind",
-      "level": 3
     },
     {
       "title": "Next.js",
@@ -108,10 +112,6 @@
     {
       "title": "Python",
 
-      "level": 2
-    },
-    {
-      "title": "TypeScript",
       "level": 2
     }
   ],
