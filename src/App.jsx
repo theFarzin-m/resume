@@ -6,12 +6,17 @@ const Title = lazy(() => import("./components/Title"));
 const Skills = lazy(() => import("./components/Skills"));
 const Project = lazy(() => import("./components/Project"));
 const Seo = lazy(() => import("./components/Seo"));
-const NavBar = lazy(() => import("./components/NavBar"));
 const About = lazy(() => import("./components/About"));
 
 import "./App.css";
 import Taps from "./components/Taps";
 import { FaArrowsSpin } from "react-icons/fa6";
+import { VscHome } from "react-icons/vsc";
+import { IoPersonOutline } from "react-icons/io5";
+import { GoProjectSymlink } from "react-icons/go";
+import { LiaLaptopCodeSolid } from "react-icons/lia";
+import { TbArrowsExchange } from "react-icons/tb";
+import { PiLaptop } from "react-icons/pi";
 
 function App() {
   const [color, setColor] = useState("#black");
@@ -64,8 +69,12 @@ function App() {
 
       <Seo />
       <Taps>
-        <Taps.Item className="bg-sky-300 hover:bg-sky-300" to="#" onClick={changetheme}>
-          <FaArrowsSpin className="md:text-3xl text-lg"  />
+        <Taps.Item
+          className="bg-sky-300 hover:bg-sky-300"
+          to="#"
+          onClick={changetheme}
+        >
+          <TbArrowsExchange className="md:text-3xl text-lg" />
         </Taps.Item>
 
         <Taps.Item
@@ -76,6 +85,7 @@ function App() {
           duration={1000}
           offset={-100}
         >
+          <VscHome className="md:text-3xl md:block hidden" />
           Title
         </Taps.Item>
         <Taps.Item
@@ -86,6 +96,7 @@ function App() {
           duration={1000}
           offset={-100}
         >
+          <IoPersonOutline className="md:text-3xl md:block hidden" />
           Aboute me
         </Taps.Item>
         <Taps.Item
@@ -96,6 +107,7 @@ function App() {
           duration={1000}
           offset={-100}
         >
+          <PiLaptop className="md:text-3xl md:block hidden" />
           Expert in
         </Taps.Item>
 
@@ -107,6 +119,7 @@ function App() {
           duration={1000}
           offset={-100}
         >
+          <GoProjectSymlink className="md:text-3xl md:block hidden" />
           Projects
         </Taps.Item>
       </Taps>
